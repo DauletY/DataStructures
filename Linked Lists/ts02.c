@@ -25,7 +25,7 @@ void list_insert(int x) {
 void list_search(int x) {
     while (head != NULL)
     {
-        if(head->val = x) {
+        if(head->val == x) {
             printf("The key is found in the list\n");
             return;
         }
