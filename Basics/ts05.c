@@ -164,8 +164,92 @@ void solve(int box[MAX]) {
         printf("\n No the not same color");
     }
     printf("\n minimum number of gloves %d", minGlovesSum);
-   
 }
+void converDecToBin(ll num) {
+    if(num > 1)
+        converDecToBin(num / 2);
+    printf("%d ", num % 2);
+}
+ll converBinToDecmal(ll num) {
+ll rem, bin_vl, dec_vl = 0, base_vl = 1;
+   bin_vl = num;
+   while(num > 0) {
+       rem = num % 10;
+       dec_vl = dec_vl + rem * base_vl;
+       num = num / 10;
+       base_vl = base_vl * 2;
+   }
+   return dec_vl;
+}
+// ()logN)
+void firT(ll n) {
+    for (ll i = 1; i < n; i = i * 2)
+    {
+        printf("[%d]", i);
+    }
+    printf("\n");
+}
+// sqrt(n)
+void fsecT(ll n) {
+    for (ll i = 1; i < sqrt(n);  i++)
+    {
+        printf("[%d]", i);
+    }
+    printf("\n");
+}
+// n 
+void ftrT(ll n) {
+    for (ll i = 1; i < n; i++)
+    {
+        printf("[%d]", i);
+    }
+    printf("\n");
+}
+// n2
+void fforT(ll n) {
+    for (ll i = 0; i < n; i++)
+    {
+        for(ll j = 0; j < n; j++) 
+            printf("[%d]", j);
+    }
+    printf("\n");
+}
+void ffitT(ll n) /* n ^ 3*/ {
+    for (ll i = 0; i < n; i++)
+    {
+        for(ll j = 0 ; j < n ; j++) {
+            for(ll k = 0; k < n; k++)
+                    printf("[%d]", k);
+        }
+    }
+    printf("\n");
+}
+ll fib(ll n)/*2n*/ {
+    if(n <= 1) return n;
+    return fib(n-2) + fib(n-1);
+    printf("\n");
+}
+ll table2(ll n) {
+    ll sum = 0;
+    for(int i = 1; i < n + 1; i+=2) {
+        if(i % 1 == 1 || i % 2 == 2)  {
+            sum += i;
+        }
+        else if(i % 3 == 4 || i % 4 == 8) {
+            sum += i;
+        }
+        else if(i % 5 == 32 || i % 6 == 64 ) {
+            sum += i;
+        }
+        else {
+           sum += i;
+        }
+    }
+    printf("\n sum: [%d]", sum);
+    return sum;
+}
+//--------------main-----------------
 int main () {
    return 0;
 }
+//--------------end------------------
