@@ -248,8 +248,17 @@ ll table2(ll n) {
     printf("\n sum: [%d]", sum);
     return sum;
 }
+double G(double  n) {
+    // return pow(n * 2, 10) + 1;
+    // return 2 * n * log(n + 2) * 2 + (n + 2) * 2 * log(n / 2);
+    // return pow(2, n + 1) + pow(3, n - 1);
+    // return sqrt(10 * n * 2 + 7 * n + 3);
+    return log(n);
+}
 //--------------main-----------------
 int main () {
+   
+   printf("%lf", G(4));  
    return 0;
 }
 //--------------end------------------
