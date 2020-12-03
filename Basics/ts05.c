@@ -255,6 +255,7 @@ double G(double  n) {
     // return sqrt(10 * n * 2 + 7 * n + 3);
     return log(n);
 }
+
 //--------------main-----------------
 int main () {
    
