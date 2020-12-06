@@ -98,6 +98,7 @@ ii matrixmultiplication(ii A[MAX][MAX],ii B[MAX][MAX], int n) {
     }
     return r;
 }
+
 int main() {
     //printf("%0.1lf", Per5(5));
     // printf("%d", PerRec(5));
@@ -106,6 +107,5 @@ int main() {
      int a[MAX][MAX] = {{5}, {7}};
      int b[MAX][MAX] = {{2}, {5}};
      printf("%d", matrixmultiplication(a, b, 10));
-
     //printf("[%d]" , secret(ar, 3)); // 8 - 5 = 3 min 2
 }
